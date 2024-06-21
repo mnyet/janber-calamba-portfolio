@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { db } from '../Firebase';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { collection } from 'firebase/firestore';
@@ -7,10 +6,8 @@ import ProjectTags from './ProjectTags';
 
 function ProjectCard() {
 
-    const [hasLink, setHasLink] = useState(true);
-
     const query = collection(db, '/projects')
-    const [docs, loading, error, snapshot] = useCollectionData(query);
+    const [docs] = useCollectionData(query);
 
     return (
         <div className='flex flex-wrap gap-10 justify-center py-20 w-10/12'>
@@ -18,7 +15,8 @@ function ProjectCard() {
                 <div className="relative flex flex-col mt-6 bg-darkGray shadow-md bg-clip-border rounded-xl h-fit w-96" key={ index }>
                     <img
                         className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 object-cover"
-                        src={`${doc.imglink === "#" ? noimage : doc.imglink}`}>
+                        src={`${doc.imglink === "#" ? noimage : doc.imglink}`}
+                        alt={doc.imgalt}>
                     </img>
                     <div className="p-6 h-56 flex flex-col justify-between">
                         <h5 className="block mb-2  text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
@@ -36,7 +34,7 @@ function ProjectCard() {
                             </a>
                         )}
                         <a href={doc.link} target='_blank' rel="noreferrer"
-                            className={`p-3 hover:bg-lightGreen ${doc.demolink !== "#" ? 'w-1/2 rounded-br-xl' : 'w-full rounded-b-xl'}`} onClick={() => setHasLink(prevState => !prevState)}>
+                            className={`p-3 hover:bg-lightGreen ${doc.demolink !== "#" ? 'w-1/2 rounded-br-xl' : 'w-full rounded-b-xl'}`}>
                             Source Code
                         </a>
                     </div>
