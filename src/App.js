@@ -4,6 +4,7 @@ import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-i
 import Navbar from './components/Navbar';
 import ProjectCard from './components/ProjectCard';
 import { faEnvelope, faMapPin, faPhone } from '@fortawesome/free-solid-svg-icons';
+import ProfileTable from './components/ProfileTable';
 
 function App() {
 
@@ -46,22 +47,7 @@ function App() {
 
       <div className='flex flex-col items-center mt-20 mb-20'>
         <h3 className='text-5xl font-bold' id="about">About me</h3>
-        <p className='w-10/12 md:w-6/12 mt-12 text-center text-lg'>I am a graduate from Our Lady of Fatima University - Valenzuela Campus studying Information Technology. As i learn through the years i found out that i really excel in problem solving thru coding, i just enjoy the ways of finding solutions to certain problems in code. And from that point, i decided that i would be choosing web/software development as my career.</p>
-        <div className='grid items-start gap-7 grid-cols-2 mt-12 w-10/12 md:w-6/12'>
-          <h4 className='text-xl font-semibold text-left'>Name:</h4>
-          <p className='text-right'>Janber Christian O. Calamba</p>
-          <h4 className='text-xl font-semibold text-left'>Gender:</h4>
-          <p className='text-right'>Male</p>
-          <h4 className='text-xl font-semibold text-left'>Birthday:</h4>
-          <p className='text-right'>December 27, 2002</p>
-          <h4 className='text-xl font-semibold text-left'>MBTI:</h4>
-          <p className='text-right'>INTJ-T 6w5</p>
-          <h4 className='text-xl font-semibold text-left'>Interests:</h4>
-          <p className='text-right'>Aone Takanobu and The Color Green 🌲</p>
-        </div>
-        <h3 className='text-4xl font-semibold mt-10' id="about">Skills</h3>
-        <p className='py-5'>Coming soon! ^w^</p>
-        <a className='hover:text-darkGreen font-bold' href='https://bear-web-portfolio.vercel.app/about' target='_blank' rel='noreferrer'>refer to old site while this is wip.</a>
+        <ProfileTable />
       </div>
 
       { /* Projects */}
