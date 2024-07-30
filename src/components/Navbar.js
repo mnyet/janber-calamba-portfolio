@@ -19,7 +19,7 @@ function Navbar() {
 
     return (
         <div className={`w-full flex z-50 bg-darkGray justify-between items-center p-10 md:px-16 md:py-10 ${navbar ? 'fixed drop-shadow-md' : 'block'}`}>
-            <a href='/#' className='text-4xl font-bold hover:text-darkGreen'><span className='text-darkGreen'>Bear</span>Portfolio</a>
+            <a href='/#' className='text-4xl font-bold hover:text-darkGreen'><span className='text-darkGreen'>Bear</span>Folio</a>
 
             <div className={menuOpen ? "" : "hidden md:block"}>
                 <ul className={`absolute text-lg font-semibold text-left left-0 pl-10 mt-10 md:mt-0 flex flex-col md:flex-row gap-5 md:gap-x-7 md:static ${menuOpen ? " border-b-4 bg-darkGray border-darkGreen md:border-b-0 w-full pb-7" : ""}`}>
