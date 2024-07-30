@@ -31,7 +31,7 @@ function ProjectCard() {
                             <h5 className="block mb-2  text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                                 {doc.name}
                             </h5>
-                            <p className="block text-base antialiased font-light leading-relaxed text-inherit">
+                            <p className="block text-base text-justify antialiased font-light leading-relaxed text-inherit">
                                 {doc.desc}
                             </p>
                             <ProjectTags path={`/projects/${doc.name}/tags`} />
