@@ -8,6 +8,8 @@ import ProfileTable from './components/ProfileTable';
 
 function App() {
 
+  let currentYear = new Date().getFullYear() // For Copyright Year ^____^
+
   return (
     <div className="App">
       { /* Header */}
@@ -17,7 +19,7 @@ function App() {
 
       <div className='flex flex-col-reverse md:flex-row justify-evenly gap-10 md:gap-0 p-10'>
         <div className='left flex justify-center flex-col gap-3'>
-          <h2 className='text-4xl font-semibold '>Hi! I am <span className='text-darkGreen'>Janber Christian Calamba</span></h2>
+          <h2 className='text-4xl font-light'>Hi! I am <span className='text-darkGreen font-semibold'>Janber Christian Calamba</span></h2>
           <p className='text-xl font-light'>I love to create websites, and program code.</p>
           <div className='flex flex-col items-center md:flex-row md:justify-center gap-10 pt-4'>
             <div className='text-4xl flex gap-5 items-center'>
@@ -98,7 +100,7 @@ function App() {
 
       { /* Footer */}
       <div className='p-5 bg-darkerGray'>
-        <div>Powered by ReactJS with TailwindCSS | &copy; Calamba 2024</div>
+        <div>Powered by ReactJS with TailwindCSS | &copy; Calamba {currentYear}</div>
       </div>
     </div>
   );

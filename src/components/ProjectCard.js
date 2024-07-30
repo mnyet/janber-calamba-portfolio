@@ -19,7 +19,7 @@ function ProjectCard() {
     }
     else {
         return (
-            <div className='flex flex-wrap gap-10 justify-center py-20 w-10/12'>
+            <div className='flex flex-wrap gap-10 justify-center py-20 w-10/12 2xl:w-6/12'>
                 {docs?.map((doc, index) => (
                     <div className="relative flex flex-col mt-6 bg-darkGray shadow-md bg-clip-border rounded-xl h-fit w-96" key={ index }>
                         <img
@@ -31,7 +31,7 @@ function ProjectCard() {
                             <h5 className="block mb-2  text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                                 {doc.name}
                             </h5>
-                            <p className="block  text-base antialiased font-light leading-relaxed text-inherit">
+                            <p className="block text-base antialiased font-light leading-relaxed text-inherit">
                                 {doc.desc}
                             </p>
                             <ProjectTags path={`/projects/${doc.name}/tags`} />

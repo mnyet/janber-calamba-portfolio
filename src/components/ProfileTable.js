@@ -23,8 +23,8 @@ function ProfileTable() {
             <>
                 {docs?.map((doc, index) => (
                     <>
-                        <p className='w-10/12 md:w-6/12 mt-12 text-center text-lg'>{doc.aboutme}</p>
-                        <div className='grid items-start gap-7 grid-cols-2 mt-12 w-10/12 md:w-6/12'>
+                        <p className='w-10/12 md:w-6/12 mt-12 text-justify text-lg'>{doc.aboutme}</p>
+                        { /*<div className='grid items-start gap-7 grid-cols-2 mt-12 w-10/12 md:w-6/12'>
                             <h4 className='text-xl font-semibold text-left'>Name:</h4>
                             <p className='text-right'>{doc.name}</p>
                             <h4 className='text-xl font-semibold text-left'>Gender:</h4>
@@ -35,9 +35,9 @@ function ProfileTable() {
                             <p className='text-right'>{doc.mbti}</p>
                             <h4 className='text-xl font-semibold text-left'>Interests:</h4>
                             <p className='text-right'>{doc.interests}</p>
-                        </div>
+                        </div> */}
 
-                        <h3 className='text-4xl font-semibold mt-20' id="about">Technologies Used</h3>
+                        <h3 className='text-4xl font-semibold mt-16' id="about">Technologies Used</h3>
                         <SkillCarousel />
                     </>
                 ))}
