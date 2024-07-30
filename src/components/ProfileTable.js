@@ -37,7 +37,7 @@ function ProfileTable() {
                             <p className='text-right'>{doc.interests}</p>
                         </div>
 
-                        <h3 className='text-4xl font-semibold mt-10' id="about">Skills</h3>
+                        <h3 className='text-4xl font-semibold mt-20' id="about">Technologies Used</h3>
                         <SkillCarousel />
                     </>
                 ))}

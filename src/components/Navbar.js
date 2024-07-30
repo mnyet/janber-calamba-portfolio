@@ -18,7 +18,7 @@ function Navbar() {
     window.addEventListener('scroll', stickyNav);
 
     return (
-        <div className={`w-full flex z-50 bg-darkGray justify-between items-center p-10 md:px-16 md:py-10 ${navbar ? 'fixed' : 'block'}`}>
+        <div className={`w-full flex z-50 bg-darkGray justify-between items-center p-10 md:px-16 md:py-10 ${navbar ? 'fixed drop-shadow-md' : 'block'}`}>
             <a href='/#' className='text-4xl font-bold hover:text-darkGreen'><span className='text-darkGreen'>Bear</span>Portfolio</a>
 
             <div className={menuOpen ? "" : "hidden md:block"}>

@@ -5,6 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'slide-left': 'slide-left 20s linear infinite',
+      },
+      keyframes: {
+        'slide-left': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+      },
       colors: {
         'darkGray': '#202124',
         'darkerGray': '#141517',
