@@ -24,7 +24,7 @@ function ProjectCard() {
                     <div className="relative flex flex-col mt-6 bg-darkGray shadow-md bg-clip-border rounded-xl h-fit w-96" key={ index }>
                         <img
                             className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 object-cover"
-                            src={`${doc.imglink === "#" ? noimage : doc.imglink}`}
+                            src={`${doc.imglink === "#" ? noimage : '/img/project_screenshots/' + doc.imglink}`}
                             alt={doc.imgalt}>
                         </img>
                         <div className="p-6 h-56 flex flex-col justify-between">
