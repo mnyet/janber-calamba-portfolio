@@ -18,7 +18,7 @@ function ExperienceSection() {
     }
     else {
         return (
-            <div className='overflow-hidden w-6/12 pt-20'>
+            <div className='overflow-hidden w-6/12 pt-20 sm:w-10/12'>
                 {docs?.map((doc, index) => {
                     const isEven = index % 2 === 0;
 
