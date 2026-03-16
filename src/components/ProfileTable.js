@@ -4,6 +4,7 @@ import { collection } from 'firebase/firestore';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import BarLoader from "react-spinners/BarLoader";
 import SkillCarousel from "./SkillCarousel"
+import ExperienceSection from './ExperienceSection';
 
 function ProfileTable() {
 
@@ -39,6 +40,9 @@ function ProfileTable() {
 
                         <h3 className='text-4xl font-semibold mt-16' id="about">Technologies Used</h3>
                         <SkillCarousel />
+
+                        <h3 className='text-4xl font-semibold mt-16' id="about">Work Experience</h3>
+                        <ExperienceSection />
                     </>
                 ))}
             </>
