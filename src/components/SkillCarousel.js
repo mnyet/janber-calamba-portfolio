@@ -21,7 +21,7 @@ function SkillCarousel() {
             <div className='overflow-hidden w-full'>
                 <div className='pt-20 flex gap-10 md:gap-20 animate-slide-left hover:animation-pause'>
                     {(docs?.concat(docs) || []).map((doc, index) => (
-                        <img src={`${doc.icon}`} className='w-auto' style={{height: "15vh"}} alt={`${doc.skill}`}></img>
+                        <img src={`${'/img/skill_icons/' + doc.icon}`} className='w-auto' style={{height: "15vh"}} alt={`${doc.skill}`}></img>
                     ))}
                 </div>
 
